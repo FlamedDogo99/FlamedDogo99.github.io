@@ -1,0 +1,40 @@
+{
+  "name": "Pause button",
+  "description": "Adds a button to pause the project next to the green flag.",
+  "info": [
+    {
+      "text": "The project can also be paused with Alt+X (Option+X on macOS).",
+      "id": "keybind"
+    }
+  ],
+  "credits": [
+    {
+      "name": "Jeffalo"
+    },
+    {
+      "name": "GarboMuffin"
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "versionAdded": "1.3.0",
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["projects", "projectEmbeds"]
+    }
+  ],
+  "userstyles": [
+    {
+      "url": "style.css",
+      "matches": ["projects", "projectEmbeds"]
+    }
+  ],
+  "tags": ["editor", "projectPlayer", "recommended"],
+  "latestUpdate": {
+    "version": "1.33.0",
+    "temporaryNotice": "There's now a keybind to pause projects.",
+    "isMajor": false
+  },
+  "enabledByDefault": true
+}

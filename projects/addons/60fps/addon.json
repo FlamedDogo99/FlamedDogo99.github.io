@@ -1,0 +1,42 @@
+{
+  "name": "60FPS project player mode",
+  "description": "Alt+Click the green flag to toggle 60FPS.",
+  "info": [
+    {
+      "type": "notice",
+      "text": "Most projects will not behave properly when running at 60FPS, because increasing the frame rate also increases the speed at which scripts run. This should only be used on projects that support 60FPS.",
+      "id": "projectRunsFasterNotice"
+    }
+  ],
+  "credits": [
+    {
+      "name": "Jeffalo",
+      "link": "https://scratch.mit.edu/users/Jeffalo/"
+    },
+    {
+      "name": "TheColaber",
+      "link": "https://scratch.mit.edu/users/TheColaber/"
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["projects", "projectEmbeds"]
+    }
+  ],
+  "settings": [
+    {
+      "name": "Alt+GreenFlag FPS",
+      "id": "framerate",
+      "type": "integer",
+      "min": 31,
+      "max": 240,
+      "default": 60
+    }
+  ],
+  "tags": ["editor", "projectPlayer", "featured"],
+  "versionAdded": "1.1.0",
+  "enabledByDefault": false
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Remove curved stage border",
+  "description": "Removes the curved border around the stage, allowing you to see the corners.",
+  "tags": ["editor", "theme", "projectPlayer"],
+  "credits": [
+    {
+      "name": "Tacodiva",
+      "link": "https://github.com/Tacodiva"
+    }
+  ],
+  "enabledByDefault": false,
+  "dynamicDisable": true,
+  "dynamicEnable": true,
+  "versionAdded": "1.14.0",
+  "userstyles": [
+    {
+      "url": "remove-borders.css",
+      "matches": ["projects"]
+    }
+  ]
+}

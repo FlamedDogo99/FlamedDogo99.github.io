@@ -1,0 +1,20 @@
+{
+  "name": "BBCode source button",
+  "description": "Adds a button to the forums that shows the BBCode source of a post.",
+  "tags": ["community", "forums"],
+  "credits": [
+    {
+      "name": "Maximouse",
+      "link": "https://scratch.mit.edu/users/Maximouse/"
+    }
+  ],
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["https://scratch.mit.edu/discuss/topic/*"]
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "versionAdded": "1.9.0"
+}

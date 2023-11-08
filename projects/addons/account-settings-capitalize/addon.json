@@ -1,0 +1,14 @@
+{
+  "name": "Capitalized Account Settings",
+  "description": "Changes \"Account settings\" in the account menu to \"Account Settings\".",
+  "userstyles": [
+    {
+      "url": "style.css",
+      "matches": ["https://scratch.mit.edu/*"]
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "tags": ["easterEgg", "community"],
+  "versionAdded": "1.9.0"
+}

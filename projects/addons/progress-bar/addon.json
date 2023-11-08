@@ -1,0 +1,51 @@
+{
+  "name": "Project progress bar",
+  "description": "Adds a progress bar for loading and saving projects.",
+  "credits": [
+    {
+      "name": "GarboMuffin"
+    },
+    {
+      "name": "jbthepig",
+      "link": "https://scratch.mit.edu/users/jbthepig/"
+    }
+  ],
+  "latestUpdate": {
+    "version": "1.31.0",
+    "temporaryNotice": "The progress bar has had a redesign since v1.30.1."
+  },
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["projects"],
+      "runAtComplete": false
+    }
+  ],
+  "userstyles": [
+    {
+      "url": "userstyle.css",
+      "matches": ["projects"]
+    }
+  ],
+  "settings": [
+    {
+      "name": "Show progress bar at top of page",
+      "id": "topbar",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "Progress bar height (px)",
+      "id": "height",
+      "type": "integer",
+      "min": 3,
+      "max": 25,
+      "default": 8
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "versionAdded": "1.0.0",
+  "tags": ["editor", "recommended"],
+  "enabledByDefault": false
+}

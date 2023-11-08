@@ -1,0 +1,26 @@
+{
+  "name": "Block dropdown search",
+  "description": "Allows you to search the options in block dropdowns.",
+  "credits": [
+    {
+      "name": "GarboMuffin"
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["projects"]
+    }
+  ],
+  "userstyles": [
+    {
+      "url": "userscript.css",
+      "matches": ["projects"]
+    }
+  ],
+  "versionAdded": "1.0.0",
+  "tags": ["editor", "codeEditor", "recommended"],
+  "enabledByDefault": false
+}
