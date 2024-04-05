@@ -1,15 +1,89 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=http://example.com">
-        <script type="text/javascript">
-            window.location.href = "./projects/editor"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow this <a href='./projects/editor'>link</a>.
-    </body>
+<!DOCTYPE html>
+ <html manifest="fowl.manifest">
+<head>
+<title>Angry Birds Chrome</title>
+<meta name="Title" content="Angry Birds">
+<meta name="description" content="Play Angry Birds online in HD with Google Chrome">
+<meta name="keywords" content="angry birds, free angry birds, online game, play online, angry birds app, chrome, google chrome, web browser, HD, arcade game, online, play angry birds online, web, application, game, iphone, android, ipad, slingshot, catapult, explosions, golden egg, levels, pigs, birds, stars, high scores, chrome os, chrome web store, angry birds rovio, play angry birds on computer, apps for chrome, play angry birds free">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="cors/fowl/images/plusone_icons/ab-bragpostinvite-80x80.png">
+
+
+<link href="https://fonts.googleapis.com/css?family=Terminal+Dosis:800" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/angry_birds_chrome.css" type="text/css">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/aknpkdffaafgjchaibgeefbgmgeghloj">
+<script type="text/javascript" src="fowl/fowl.nocache.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function getFlashVersion() {
+            try {
+                var version;
+                try {
+                    version = new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");
+                } catch (e) {
+                    version = navigator.plugins["Shockwave Flash"].description;
+                }
+                return version.replace(/\D*(\d+).*/g, "$1");
+            } catch (e) {
+                return -1;
+            }
+        }
+
+        function haveAudioSupport() {
+          
+            try {
+              if (new AudioContext()) {
+                return true;
+              }
+            } catch (ignore) { }
+
+            try {
+              if (new webkitAudioContext()) {
+                return true;
+              }
+            } catch (ignore) { }
+
+          
+        }
+      </script>
+<table class="content-table">
+<tr>
+<td>
+<div class="gamecont" id="content">
+<div id="loginInfo"></div>
+<div id="gameDiv" style="display: inline-block;">
+<div id="playn-root">
+<div id="loading">
+<img src="images/loading_image_bird.png" />
+</div>
+</div>
+<div id="rovionews"></div>
+<div id="videochapter"></div>
+<div id="ingameframecontainer"></div>
+<div id="cornerframecontainer1"></div>
+</div>
+<div class="buttons">
+<div class="buttoncontainer">
+<div id="version-buttons"></div>
+</div>
+<div id="tooltip"></div>
+<script type="text/javascript">
+                tooltip = document.getElementById('tooltip');
+                resetTooltip = function() { tooltip.innerHTML = ""; }
+             </script>
+</div>
+</div>
+</td>
+</td>
+</tr>
+</table>
+<noscript>
+      <div class="info-noscript">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+</body>
 </html>
